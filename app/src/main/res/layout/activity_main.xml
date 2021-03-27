@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- main page-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- appbar-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/side_nav_bar"
+        android:theme="@style/Theme.ProjectTest2.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="11dp"
+                android:id="@+id/ic_menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_menu"
+                />
+
+
+        </LinearLayout>
+
+
+        <!--
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.ProjectTest2.PopupOverlay"
+            />-->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <!--*********************** -->
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/draw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--主界面-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 设置转换到MainActivity的 button-->
+
+
+<!--
+                <ImageButton
+                    android:id="@+id/ic_menu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/icon_menu"
+                    />
+-->
+
+            </LinearLayout>
+
+
+            <!--
+            <TextView
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="177dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:text="登入"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
+                -->
+            <!--
+                        <Button
+                            android:id="@+id/btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="出现" />
+            -->
+
+
+        </LinearLayout>
+        <!-- 底部导航栏-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <!-- 可以使用ImageButton来进行点击设置-->
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="提交" />
+
+        </LinearLayout>
+
+        <!-- 侧滑页面-->
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!--**********************-->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_header_height"
+                android:background="@drawable/side_nav_bar"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                <ImageButton
+                    android:id="@+id/loginChange_Activity"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/nav_header_desc"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:background="@drawable/my_profile" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:text="@string/nav_header_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <TextView
+                    android:id="@+id/email_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nav_header_subtitle" />
+            </LinearLayout>
+
+            <!-- 以下是侧滑页面的中央菜单 日后可能会使用item 进行代替现在的-->
+
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/notice"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/noticea"/>
+
+                <!-- 通知-->
+
+                <ImageButton
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/order"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orderc"/>
+
+                <!-- 주문 -->
+
+                <ImageButton
+                    android:id="@+id/community"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/community"/>
+
+                <!-- 커뮤니티 -->
+
+                <ImageButton
+                    android:id="@+id/schoolmeal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/schoolmeal"/>
+
+                <!-- 급식-->
+
+                <ImageButton
+                    android:id="@+id/hspage"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/hspage"
+                    />
+
+                <!-- 학교 홈페이지 이동 -->
+
+                <ImageButton
+                    android:id="@+id/adcd"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/adcd"
+                    />
+
+                <!-- 학사 일정-->
+
+                <ImageButton
+                    android:id="@+id/sehedule"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/schedule"
+                    />
+
+
+
+                <!-- 시간표-->
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="你好吗"
+
+                    />
+                </LinearLayout>
+
+                </ScrollView>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <!-- 侧边栏内部 底部按钮-->
+
+            <RelativeLayout
+                android:gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- 可以替换成ImageButton 进行图表设置-->
+
+
+                <ImageButton
+                    android:id="@+id/ins"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ins"
+                    android:color="@color/settingBlue"
+                    android:gravity="left" />
+
+
+                <ImageButton
+                    android:layout_toRightOf="@+id/ins"
+
+                    android:id="@+id/github"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/github"
+                    android:color="@color/settingBlue"/>
+
+
+
+
+
+                <ImageButton
+               android:layout_marginLeft="210dp"
+                    android:id="@+id/setting_activity"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ic_setting"
+                    android:color="@color/settingBlue"
+                     />
+
+                <!--                <ImageButton-->
+                <!--                    android:layout_width="35dp"-->
+                <!--                    android:layout_height="35dp"-->
+
+                <!--                    android:background="@drawable/ins"-->
+                <!--                    android:color="@color/settingBlue" />-->
+
+
+                <!--
+                <ImageButton
+                    android:id="@+id/setting_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/ic_setting"
+                    android:layout_gravity="right"
+                    />
+                    -->
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

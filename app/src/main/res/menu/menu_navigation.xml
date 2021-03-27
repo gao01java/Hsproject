@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+
+        <item
+            android:id="@+id/single_1"
+            android:title="安卓" />
+
+        <item
+            android:id="@+id/single_2"
+            android:title="苹果"
+        />
+    </group>
+
+</menu>
