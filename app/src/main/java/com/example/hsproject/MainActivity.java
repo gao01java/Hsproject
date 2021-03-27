@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Intent.ACTION_VIEW);
-                Uri uri=Uri.parse("https://gao01java.github.io/Hsproject/");
+                Uri uri=Uri.parse("https://github.com/gao01java/Hsproject");
                 intent.setData(uri);
                 startActivity(intent);
             }
