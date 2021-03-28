@@ -3,7 +3,10 @@ package com.example.hsproject;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.transition.Transition;
+import android.transition.TransitionInflater;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -18,6 +21,13 @@ public class CreateAccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_account_main);
 
+/***********/
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT_WATCH) {
+            Transition slide = TransitionInflater.from(this).inflateTransition(R.transition.fade);
+            getWindow().setEnterTransition(slide);
+            getWindow().setExitTransition(slide);
+        }
+/***********/
         findViewById(R.id.signup1).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
