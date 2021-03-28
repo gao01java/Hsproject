@@ -6,15 +6,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.versionedparcelable.ParcelField;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.media.Image;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 /**--ActivityMain 작성자 Kenan 날짜: 2021-2-15~~~2021-8-미정 -- */
 
@@ -138,8 +141,12 @@ public class MainActivity extends AppCompatActivity {
         loginB.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+                    Toast.makeText(MainActivity.this,"手机操作系统版本过低",Toast.LENGTH_SHORT).show();
+                    return ;
+                }
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent);
+                startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
             }
         });
 

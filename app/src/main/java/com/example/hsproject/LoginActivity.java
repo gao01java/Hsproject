@@ -2,9 +2,12 @@ package com.example.hsproject;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.transition.Transition;
+import android.transition.TransitionInflater;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -45,8 +48,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_main);
 /**************************************************************/
-
-
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT_WATCH) {
+            Transition slide = TransitionInflater.from(this).inflateTransition(R.transition.fade);
+            getWindow().setEnterTransition(slide);
+            getWindow().setExitTransition(slide);
+        }
         /**************************************************************/
         /** 点击返回主界面后 直接回到主界面的代码*/
 
