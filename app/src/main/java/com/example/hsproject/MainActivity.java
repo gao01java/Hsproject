@@ -93,8 +93,12 @@ public class MainActivity extends AppCompatActivity {
         noticeB.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent=new Intent(MainActivity.this,NoticeActivity.class);
-                startActivity(intent);
+                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+                    Toast.makeText(MainActivity.this,"手机操作系统版本过低",Toast.LENGTH_SHORT).show();
+                    return ;
+                }
+                Intent intent = new Intent(MainActivity.this,NoticeActivity.class);
+                startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
             }
         });
 
@@ -102,8 +106,12 @@ public class MainActivity extends AppCompatActivity {
         orderB.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent=new Intent(MainActivity.this,OrderActivity.class);
-                startActivity(intent);
+                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+                    Toast.makeText(MainActivity.this,"手机操作系统版本过低",Toast.LENGTH_SHORT).show();
+                    return ;
+                }
+                Intent intent = new Intent(MainActivity.this,OrderActivity.class);
+                startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
             }
         });
 
@@ -112,8 +120,12 @@ public class MainActivity extends AppCompatActivity {
         cmnB.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent=new Intent(MainActivity.this,CommunityActivity.class);
-                startActivity(intent);
+                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+                    Toast.makeText(MainActivity.this,"手机操作系统版本过低",Toast.LENGTH_SHORT).show();
+                    return ;
+                }
+                Intent intent = new Intent(MainActivity.this,CommunityActivity.class);
+                startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
             }
         });
 
@@ -123,8 +135,12 @@ public class MainActivity extends AppCompatActivity {
         scmB.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent=new Intent(MainActivity.this,SchoolmealACtivity.class);
-                startActivity(intent);
+                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+                    Toast.makeText(MainActivity.this,"手机操作系统版本过低",Toast.LENGTH_SHORT).show();
+                    return ;
+                }
+                Intent intent = new Intent(MainActivity.this,SchoolmealACtivity.class);
+                startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
             }
         });
 
@@ -154,8 +170,15 @@ public class MainActivity extends AppCompatActivity {
         settingB.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent=new Intent(MainActivity.this,SettingActivity.class);
-                startActivity(intent);
+
+                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+                    Toast.makeText(MainActivity.this,"手机操作系统版本过低",Toast.LENGTH_SHORT).show();
+                    return ;
+                }
+                Intent intent = new Intent(MainActivity.this,SettingActivity.class);
+                startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
+               // Intent intent=new Intent(MainActivity.this,SettingActivity.class);
+                //startActivity(intent);
             }
 
 
