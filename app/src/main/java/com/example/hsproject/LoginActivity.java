@@ -1,6 +1,7 @@
 package com.example.hsproject;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -72,8 +73,12 @@ public class LoginActivity extends AppCompatActivity {
         Cab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+                    Toast.makeText(LoginActivity.this,"手机操作系统版本过低",Toast.LENGTH_SHORT).show();
+                    return ;
+                }
                 Intent intent = new Intent(LoginActivity.this, CreateAccountActivity.class);
-                startActivity(intent);
+                startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(LoginActivity.this).toBundle());
             }
         });
 
