@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this,"手机操作系统版本过低",Toast.LENGTH_SHORT).show();
                     return ;
                 }
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                Intent intent = new Intent(MainActivity.this,LoginActivity.class);
                 startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
             }
         });

@@ -22,10 +22,9 @@ public class CreateAccountActivity extends AppCompatActivity {
         setContentView(R.layout.create_account_main);
 
 /***********/
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT_WATCH) {
-            Transition slide = TransitionInflater.from(this).inflateTransition(R.transition.fade);
-            getWindow().setEnterTransition(slide);
-            getWindow().setExitTransition(slide);
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT_WATCH) {//版本号大于4.4
+            Transition explode = TransitionInflater.from(this).inflateTransition(R.transition.explode);
+            getWindow().setEnterTransition(explode);//第一次进入时动画
         }
 /***********/
         findViewById(R.id.signup1).setOnClickListener(new View.OnClickListener(){
