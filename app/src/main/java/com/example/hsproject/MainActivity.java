@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //github 이
+        //github 이동
         github=(ImageButton)findViewById(R.id.github);
         github.setOnClickListener(new View.OnClickListener() {
             @Override
