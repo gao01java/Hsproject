@@ -66,15 +66,28 @@
             android:layout_width="205dp"
             android:layout_height="205dp">
 
+            <!-- 주문-->
+            <ImageButton
+                android:id="@+id/coffeeOrderMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ordercoffee"/>
+
+
 
         </LinearLayout>
 
-        <!-- 적립-->
+        <!-- 선물-->
         <LinearLayout
             android:background="@drawable/orderbox"
             android:layout_width="205dp"
             android:layout_height="205dp">
+         <ImageButton
 
+             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:background="@drawable/gift"
+              android:id="@+id/gift"/>
 
         </LinearLayout>
 
@@ -92,13 +105,19 @@
             android:layout_width="205dp"
             android:layout_height="205dp">
 
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/coffeeCoupon"
+                android:background="@drawable/coupon"/>
+
 
         </LinearLayout>
         <!-- 비즈쿨 공지사항-->
         <LinearLayout
-            android:background="@drawable/orderbox"
             android:layout_width="205dp"
-            android:layout_height="205dp">
+            android:layout_height="205dp"
+            android:background="@drawable/orderbox">
 
 
         </LinearLayout>
