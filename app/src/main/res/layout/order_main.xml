@@ -26,7 +26,7 @@
             android:layout_gravity="center_vertical"
             android:background="@drawable/icon_back" />
         <ImageButton
-            android:id="@+id/buy_car"
+            android:id="@+id/buy_bag"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_marginTop="9dp"
@@ -51,10 +51,75 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="25sp"
-            android:text="바코드 추가"/>
+            android:text="적립 바코드 추가"/>
+    </LinearLayout>
+
+    <!-- 第二行2盒子-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:orientation="horizontal">
+         <!-- Menu-->
+        <LinearLayout
+            android:background="@drawable/orderbox"
+            android:layout_width="205dp"
+            android:layout_height="205dp">
+
+
+        </LinearLayout>
+
+        <!-- 적립-->
+        <LinearLayout
+            android:background="@drawable/orderbox"
+            android:layout_width="205dp"
+            android:layout_height="205dp">
+
+
+        </LinearLayout>
+
     </LinearLayout>
 
 
+    <!-- 第三行2盒子-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:orientation="horizontal">
+        <!-- 코폰-->
+        <LinearLayout
+            android:background="@drawable/orderbox"
+            android:layout_width="205dp"
+            android:layout_height="205dp">
+
+
+        </LinearLayout>
+        <!-- 비즈쿨 공지사항-->
+        <LinearLayout
+            android:background="@drawable/orderbox"
+            android:layout_width="205dp"
+            android:layout_height="205dp">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/orderpay"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+
+    </LinearLayout>
+
+    <!-- 광고-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
 
 
 
