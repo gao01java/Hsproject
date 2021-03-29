@@ -19,7 +19,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-/**--ActivityMain 작성자 Kenan 날짜: 2021-2-15~~~2021-8-미정 -- */
+/**--ActivityMain 작성자 Kenan 날짜: 2021-3-7~~~2021-8-미정 -- */
 
 public class MainActivity extends AppCompatActivity {
 
