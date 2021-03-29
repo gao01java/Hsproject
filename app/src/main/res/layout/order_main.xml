@@ -11,10 +11,11 @@
         android:background="@drawable/side_nav_bar"
         android:theme="@style/Theme.ProjectTest2.AppBarOverlay">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/bt_back"
@@ -24,25 +25,26 @@
             android:layout_height="35dp"
             android:layout_gravity="center_vertical"
             android:background="@drawable/icon_back" />
+        <ImageButton
+            android:id="@+id/buy_car"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="337dp"
+            android:background="@drawable/bag" />
+
+
 
 
     </LinearLayout>
 
-        <!--
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-           app:popupTheme="@style/Theme.ProjectTest2.PopupOverlay"
-            />-->
-
     </com.google.android.material.appbar.AppBarLayout>
-
+            <!-- 바코드 xml -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp">
-
         <TextView
             android:background="@drawable/barcode"
             android:gravity="center"
@@ -50,10 +52,9 @@
             android:layout_height="match_parent"
             android:textSize="25sp"
             android:text="바코드 추가"/>
-
-
-
     </LinearLayout>
+
+
 
 
 
