@@ -4,6 +4,8 @@
 
 Notion 링크:https://www.notion.so/63d1be68a1ee4704bdba0d315fbee7b7
 
-개발도구:2019/MacBook Pro 13/Android Studio/GitHub Desktop 
+개발 장비:MacBook Pro13-2019
+
+개발도구:Android Studio/GitHub Desktop/Notion
 
 기반:AndroidStudio4.1.2//Android8(API 26)//JDK(1.8)
