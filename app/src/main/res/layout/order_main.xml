@@ -99,7 +99,7 @@
         android:layout_width="match_parent"
         android:layout_height="205dp"
         android:orientation="horizontal">
-        <!-- 코폰-->
+        <!-- 쿠폰-->
         <LinearLayout
             android:background="@drawable/orderbox"
             android:layout_width="205dp"
