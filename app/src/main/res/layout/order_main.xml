@@ -113,12 +113,17 @@
 
 
         </LinearLayout>
-        <!-- 비즈쿨 공지사항-->
+        <!-- 결제 방식 관리-->
         <LinearLayout
             android:layout_width="205dp"
             android:layout_height="205dp"
             android:background="@drawable/orderbox">
 
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/imagecard"
+                android:id="@+id/card"/>
 
         </LinearLayout>
 
